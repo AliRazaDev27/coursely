@@ -66,6 +66,7 @@ a {
   text-decoration: none;
   transition: color var(--transition);
 }
+
 a:hover {
   color: var(--accent-hover);
 }
@@ -87,6 +88,7 @@ a:hover {
   text-decoration: none;
   line-height: 1.4;
 }
+
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -97,7 +99,9 @@ a:hover {
   color: white;
   box-shadow: 0 0 12px var(--accent-glow);
 }
+
 .btn-primary:hover:not(:disabled) {
+  color: black;
   background: var(--accent-hover);
   box-shadow: var(--shadow-glow);
   transform: translateY(-1px);
@@ -108,6 +112,7 @@ a:hover {
   color: var(--text-secondary);
   border: 1px solid var(--border);
 }
+
 .btn-ghost:hover:not(:disabled) {
   color: var(--text-primary);
   border-color: var(--border-hover);
@@ -119,6 +124,7 @@ a:hover {
   color: var(--danger);
   border: 1px solid transparent;
 }
+
 .btn-danger:hover:not(:disabled) {
   background: var(--danger);
   color: white;
@@ -133,11 +139,13 @@ a:hover {
   cursor: pointer;
   transition: all var(--transition);
 }
+
 .btn-icon:hover:not(:disabled) {
   color: var(--text-primary);
   background: var(--accent-subtle);
   border-color: var(--border-hover);
 }
+
 .btn-icon.btn-danger:hover:not(:disabled) {
   color: white;
   background: var(--danger);
@@ -155,6 +163,7 @@ a:hover {
 .spinner {
   animation: spin 0.7s linear infinite;
 }
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -223,15 +232,18 @@ a:hover {
   text-align: center;
   margin-bottom: 24px;
 }
+
 .auth-header-icon {
   color: var(--accent);
   margin-bottom: 12px;
 }
+
 .auth-header h2 {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 4px;
 }
+
 .auth-header p {
   color: var(--text-muted);
   font-size: 0.875rem;
@@ -267,6 +279,7 @@ a:hover {
   flex-direction: column;
   gap: 6px;
 }
+
 .form-group label {
   font-size: 0.8rem;
   font-weight: 500;
@@ -278,6 +291,7 @@ a:hover {
 .input-wrapper {
   position: relative;
 }
+
 .input-icon {
   position: absolute;
   left: 12px;
@@ -286,6 +300,7 @@ a:hover {
   color: var(--text-muted);
   pointer-events: none;
 }
+
 .input-wrapper input {
   padding-left: 40px;
 }
@@ -303,11 +318,13 @@ textarea {
   transition: border-color var(--transition), box-shadow var(--transition);
   outline: none;
 }
+
 input:focus,
 textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--accent-glow);
 }
+
 input::placeholder,
 textarea::placeholder {
   color: var(--text-muted);
@@ -354,6 +371,7 @@ textarea {
   font-weight: 700;
   color: var(--text-primary);
 }
+
 .dashboard-nav-brand svg {
   color: var(--accent);
 }
@@ -369,6 +387,7 @@ textarea {
   color: var(--text-muted);
   display: none;
 }
+
 @media (min-width: 640px) {
   .dashboard-nav-email {
     display: block;
@@ -399,10 +418,12 @@ textarea {
   gap: 16px;
   flex-wrap: wrap;
 }
+
 .dashboard-header h1 {
   font-size: 1.75rem;
   font-weight: 700;
 }
+
 .dashboard-subtitle {
   color: var(--text-muted);
   font-size: 0.9rem;
@@ -429,6 +450,7 @@ textarea {
   flex-direction: column;
   gap: 12px;
 }
+
 .course-card:hover {
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
@@ -448,6 +470,7 @@ textarea {
   flex: 1;
   min-width: 0;
 }
+
 .course-card-title-link h3 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -457,6 +480,7 @@ textarea {
   white-space: nowrap;
   transition: color var(--transition);
 }
+
 .course-card-title-link:hover h3 {
   color: var(--accent);
 }
@@ -525,10 +549,12 @@ textarea {
   text-align: center;
   color: var(--text-muted);
 }
+
 .empty-state svg {
   color: var(--text-muted);
   opacity: 0.5;
 }
+
 .empty-state h3 {
   color: var(--text-primary);
   font-size: 1.15rem;
@@ -553,6 +579,7 @@ textarea {
   font-size: 0.875rem;
   transition: color var(--transition);
 }
+
 .back-link:hover {
   color: var(--text-primary);
 }
@@ -571,9 +598,11 @@ textarea {
   gap: 12px;
   margin-bottom: 24px;
 }
+
 .form-card-header svg {
   color: var(--accent);
 }
+
 .form-card-header h2 {
   font-size: 1.25rem;
   font-weight: 600;
@@ -611,6 +640,7 @@ textarea {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+
 .course-detail-header h1 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -630,6 +660,7 @@ textarea {
   border-bottom: 1px solid var(--border);
   margin-bottom: 20px;
 }
+
 .course-detail-meta span {
   display: flex;
   align-items: center;
@@ -642,6 +673,7 @@ textarea {
   line-height: 1.7;
   color: var(--text-secondary);
 }
+
 .course-detail-body p {
   white-space: pre-wrap;
 }
@@ -664,11 +696,9 @@ textarea {
   text-align: center;
   background:
     radial-gradient(ellipse at top, rgba(139, 92, 246, 0.1), transparent 50%),
-    radial-gradient(
-      ellipse at bottom right,
+    radial-gradient(ellipse at bottom right,
       rgba(99, 102, 241, 0.06),
-      transparent 50%
-    ),
+      transparent 50%),
     var(--bg-root);
 }
 
